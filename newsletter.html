@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./tailwind.js"></script>
+</head>
+
+<body>
+    <section class="px-[30px] relative min-h-[439px] sm:max-h-[758px] sm:min-h-[758px]">
+        <img class="absolute top-[250px] left-18 pointer-events-none xl:left-20 max-lg:hidden"
+            src="./assets/images/svg/newsletter-arrow.svg" alt="arrow-img">
+        <div class="max-w-[1220px] mx-auto relative pt-10 md:pt-[103px] z-5">
+            <h2
+                class="font-tomorrow font-semibold text-center text-2xl md:text-[40px] leading-[110%] md:leading-[29px] uppercase text-light-black">
+                ZAPISZ SIĘ DO NEWSLETTERA</h2>
+            <p
+                class="font-inter mx-auto font-medium max-sm:text-xs leading-[120%] text-center text-light-black max-w-[584px] pt-[15px] sm:pt-8">
+                Wypełnij poniższy formularz, aby być na bieżąco ze wszystkimi odcinkami Patoarchitektów i uzyskać dostęp
+                do dodatkowych materiałów.</p>
+            <div class="max-w-[500px] mx-auto w-full mt-8 sm:mt-[67px]">
+                <input
+                    class="max-w-[435px] flex justify-center mx-auto w-full text-center px-8 font-medium text-2xl leading-[32px] text-gray placeholder:text-gray outline-0"
+                    type="email" placeholder="Adres e-mail">
+                <div class="border mt-1.5 border-orange"></div>
+            </div>
+            <div class="flex justify-center mt-8 sm:mt-[93px]">
+                <button
+                    class="bg-orange hover:text-orange hover:bg-light-black transition-all duration-300 ease-linear active:scale-95 text-light-black p-[10.5px] w-full max-w-[353px] rounded-[70px] font-bold sm:text-2xl leading-[100%] uppercase">Zapisz
+                    się</button>
+            </div>
+        </div>
+        <img class="w-full absolute bottom-0 left-0 z-20 pointer-events-none"
+            src="./assets/images/png/footer-black-cloud.png" alt="cloud-img">
+        <img class="absolute right-0 bottom-0 pointer-events-none max-sm:max-w-[114px] max-sm:max-h-[166px] max-md:max-w-[300px]"
+            src="./assets/images/svg/horse.svg" alt="horse-img">
+    </section>
+</body>
+
+</html>

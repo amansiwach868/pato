@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- ✅ Correct Tailwind CDN -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script type="module" src="./tailwind.js"></script>
 </head>
 
-<body class="!overflow-x-hidden">
+<body>
     <header>
         <div
             class="min-h-[900px] bg-[url(./assets/images/pnd/hero-bg-img.png)] w-full bg-cover bg-center bg-no-repeat relative">
@@ -20,22 +19,27 @@
                 Do najbliższego szkolenia <span class="text-[#FF4405]">zostały 3 dni!</span> <span
                     class="text-[#FF4405] !font-medium">👉 Zapisz się teraz!</span>
             </div>
-            <div class="max-w-[800px] w-full mx-auto sm:pt-[162px]">
+            <nav class="max-w-[800px] w-full mx-auto sm:pt-[162px]">
                 <ul id="navMenu"
                     class="flex sm:justify-between duration-300 justify-center z-40 max-sm:bg-[#803b24] max-sm:fixed top-0 -right-full items-center py-5 px-[23px] w-full font-inter max-sm:min-h-screen max-sm:w-full max-sm:flex-col max-sm:gap-y-10">
-                    <li class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                    <li
+                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#gdzieSłuchać">Gdzie słuchać</a>
                     </li>
-                    <li class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                    <li
+                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#oNas">O nas</a>
                     </li>
-                    <li class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                    <li
+                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#szkolenia">Szkolenia</a>
                     </li>
-                    <li class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                    <li
+                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#bezpłatnaKonsultacja">Bezpłatna Konsultacja</a>
                     </li>
-                    <li class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                    <li
+                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#kontakt">Kontakt</a>
                     </li>
                 </ul>
@@ -45,10 +49,10 @@
                     <span id="toggleBar2" class="origin-left ml-auto h-[3px] bg-white duration-300 w-full"></span>
                     <span id="toggleBar3" class="origin-left ml-auto h-[3px] bg-white duration-300 w-full"></span>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
-    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

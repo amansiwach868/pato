@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Section</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./tailwind.js"></script>
+</head>
+
+<body>
+    <section class="pt-16 pb-[139px] bg-light-black">
+        <div class="container mx-auto max-w-[1200px] px-4">
+            <h2 class="text-[64px] uppercase text-white pb-[120px] font-medium font-tomorrow">Usługi</h2>
+
+            <div id="accordion" class="flex flex-col md:gap-11 gap-6">
+                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
+                    style="border-radius: 50px;">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
+                        SZKOLENIA OTWARTE
+                        <span
+                            class="arrow bg-black text-white md:size-[75px] size-[40px] flex items-center justify-center rounded-full">
+                            <img src="./assets/images/svg/white-arrow.svg" alt="white-arrow"
+                                class="md:w-[50px] w-5 arrow-icon transition-transform duration-300" />
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                        <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
+                    </div>
+                </div>
+                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
+                    style="border-radius: 50px;">
+                    <button
+                        class="accordion-header w-full uppercase flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
+                    Szkolenia dla firm
+                        <span
+                            class="arrow bg-black text-white md:size-[75px] size-[40px] flex items-center justify-center rounded-full">
+                            <img src="./assets/images/svg/white-arrow.svg" alt="white-arrow"
+                                class="md:w-[50px] w-5 arrow-icon transition-transform duration-300" />
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                        <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
+                    </div>
+                </div>
+                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
+                    style="border-radius: 50px;">
+                    <button
+                        class="accordion-header uppercase w-full flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
+                Konsultacje
+                        <span
+                            class="arrow bg-black text-white md:size-[75px] size-[40px] flex items-center justify-center rounded-full">
+                            <img src="./assets/images/svg/white-arrow.svg" alt="white-arrow"
+                                class="md:w-[50px] w-5 arrow-icon transition-transform duration-300" />
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                        <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
+                    </div>
+                </div>
+            <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
+                style="border-radius: 50px;">
+                <button
+                    class="accordion-header uppercase w-full flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
+                Doradztwo
+                    <span
+                        class="arrow bg-black text-white md:size-[75px] size-[40px] flex items-center justify-center rounded-full">
+                        <img src="./assets/images/svg/white-arrow.svg" alt="white-arrow"
+                            class="md:w-[50px] w-5 arrow-icon transition-transform duration-300" />
+                    </span>
+                </button>
+                <div
+                    class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                    <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

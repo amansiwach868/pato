@@ -12,3 +12,6 @@ html,
 body {
     overflow-x: hidden;
 }
+.accordion-item {
+    transition: border-radius 0.4s ease-in-out;
+}

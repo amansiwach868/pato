@@ -11,46 +11,53 @@
 </head>
 
 <body>
-    <header>
-        <div  class="min-h-[900px] bg-[url(./assets/images/png/hero-bg-img.png)] w-full bg-cover bg-center bg-no-repeat relative">
+    <header class="bg-[url(./assets/images/png/hero-bg-img.png)] w-full bg-cover bg-center bg-no-repeat">
+        <div  class="md:min-h-[900px] min-h-[844px] max-w-[1240px] mx-auto px-[30px] relative">
             <div
-                class="absolute top-0 w-full max-w-[998px] left-1/2 -translate-x-1/2 bg-white h-11 sm:flex hidden justify-center font-inter items-center !leading-[100%] uppercase text-base font-bold text-center rounded-b-[15px]">
+                class="absolute top-0 w-full max-w-[998px] left-1/2 -translate-x-1/2 bg-white h-11 md:flex hidden justify-center font-inter items-center !leading-[100%] uppercase text-base font-bold text-center rounded-b-[15px]">
                 Do najbliższego szkolenia <span class="text-[#FF4405]">zostały 3 dni!</span> <span
                     class="text-[#FF4405] !font-medium">👉 Zapisz się teraz!</span>
             </div>
-            <nav class="max-w-[800px] w-full mx-auto sm:pt-[162px]">
+            <nav
+             class="max-w-[800px] w-full mx-auto md:pt-[162px]">
                 <ul id="navMenu"
-                    class="flex sm:justify-between duration-300 justify-center z-40 max-sm:bg-[#803b24] max-sm:fixed top-0 -right-full items-center py-5 px-[23px] w-full font-inter max-sm:min-h-screen max-sm:w-full max-sm:flex-col max-sm:gap-y-10">
+                    class="flex md:justify-between duration-300 justify-center z-40 max-md:bg-[#803b24] max-md:fixed top-0 -right-full items-center py-5 px-[23px] w-full font-inter max-md:min-h-screen max-md:w-full max-md:flex-col max-md:gap-y-10">
                     <li
-                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                        class="text-sm uppercase font-semibold md:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#gdzieSłuchać">Gdzie słuchać</a>
                     </li>
                     <li
-                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                        class="text-sm uppercase font-semibold md:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#oNas">O nas</a>
                     </li>
                     <li
-                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                        class="text-sm uppercase font-semibold md:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#szkolenia">Szkolenia</a>
                     </li>
                     <li
-                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                        class="text-sm uppercase font-semibold md:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#bezpłatnaKonsultacja">Bezpłatna Konsultacja</a>
                     </li>
                     <li
-                        class="text-sm uppercase font-semibold sm:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
+                        class="text-sm uppercase font-semibold md:text-black text-white leading-[100%] py-1 after:content-[''] after:bg-white after:w-0 after:absolute relative after:h-[1px] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:z-50 after:duration-300 hover:after:w-full hover:text-white duration-300 cursor-pointer">
                         <a href="#kontakt">Kontakt</a>
                     </li>
                 </ul>
                 <div onclick="toggleNavbar()"
-                    class="z-50 group relative !min-h-[17px] ml-auto pt-[75px] mr-[30px] !w-[25px] flex flex-col justify-center items-center gap-1 sm:hidden">
+                    class="z-50 group relative !min-h-[17px] ml-auto pt-[74px] mr-[30px] !w-[25px] flex flex-col justify-center items-center gap-1 md:hidden">
                     <span id="toggleBar1" class="origin-left ml-auto h-[3px] bg-white duration-300 w-full"></span>
                     <span id="toggleBar2" class="origin-left ml-auto h-[3px] bg-white duration-300 w-full"></span>
                     <span id="toggleBar3" class="origin-left ml-auto h-[3px] bg-white duration-300 w-full"></span>
                 </div>
             </nav>
-            <div class="">
-                
+            <div 
+            class="w-full md:pt-[114px] pt-[133px] flex md:max-w-[800px] md:flex-row flex-col mx-auto px-[30px]  justify-center items-center md:gap-[52px] gap-[27px]">
+                <img class="md:max-w-[236px] max-w-[250px] w-full" src="./assets/images/svg/logo.svg" alt="logo">
+                <img class="md:max-w-[511px] max-w-[250px] w-full" src="./assets/images/svg/logo-text.svg" alt="text">
+            </div>
+            <div class="flex justify-center items-center flex-col pt-[161px]">
+                <button class="font-medium text-2xl leading-[100%] uppercase px-[35px] h-[45px] font-inter rounded-[30px] border-[2px] hover:text-white hover:bg-black duration-300 border-black active:scale-95">Bezpłatna Konsultacja</button>
+                <p class="text-[11px] leading-[100%] uppercase text-center font-medium h-[38px] max-w-[174px] w-full flex justify-center items-center mt-[19px]">Powered by <a href="Protopia.tech">Protopia.tech</a></p>
             </div>
         </div>
     </header>

@@ -3,16 +3,21 @@ const toggleBar1 = document.getElementById('toggleBar1')
 const toggleBar2 = document.getElementById('toggleBar2')
 const toggleBar3 = document.getElementById('toggleBar3')
 
+const navlinks = document.querySelectorAll('#nav-link')
+
 const toggleNavbar = () => {
-    navMenu.classList.toggle('right-0')
-    toggleBar1.classList.toggle('rotate-[35deg]')
-    toggleBar2.classList.toggle('opacity-0')
-    toggleBar3.classList.toggle('-rotate-[35deg]')
-    document.querySelector('html').classList.toggle('overflow-y-hidden')
-}
+    navMenu.classList.toggle('right-0');
+    toggleBar1.classList.toggle('rotate-[35deg]');
+    toggleBar2.classList.toggle('opacity-0');
+    toggleBar3.classList.toggle('-rotate-[35deg]');
+    document.querySelector('html').classList.toggle('overflow-y-hidden');
+};
+
+navlinks.forEach(item => {
+    item.addEventListener('click', toggleNavbar);
+});
 
 const items = document.querySelectorAll('.accordion-item');
-
 items.forEach(item => {
     const header = item.querySelector('.accordion-header');
     const content = item.querySelector('.accordion-content');

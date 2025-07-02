@@ -262,12 +262,13 @@
                 Wszystkie Odcinki
             </button>
         </div>
-        <img class="w-full absolute bottom-0" src="./assets/images/png/cloud-1.png" alt="bottom-cloud-img">
+        <img class="w-full absolute bottom-0 pointer-events-none" src="./assets/images/png/cloud-1.png"
+            alt="bottom-cloud-img">
     </section>
     <!-- SUBSKRYBUJ PODCAST section -->
     <section
         class="pt-[40px] pb-[46px] sm:pt-[80px] sm:pb-[96px] md:pt-[102px] md:pb-[148px] max-w-[1920px] mx-auto relative">
-        <img class="absolute bottom-5 min-[992px]:top-0 right-5 min-[992px]:right-40 w-[48px] sm:w-[105.56px] h-[48px] sm:h-[105.56px] "
+        <img class="absolute pointer-events-none bottom-5 min-[992px]:top-0 right-5 min-[992px]:right-40 w-[48px] sm:w-[105.56px] h-[48px] sm:h-[105.56px] "
             src="./assets/images/svg/cross.svg" alt="cross">
         <div class="max-w-[1150px] px-[30px] mx-auto">
             <h2
@@ -293,6 +294,12 @@
             </div>
         </div>
     </section>
+    <!-- back-to-top -->
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 px-4 py-2 text-white text-[16px] rounded-md !bg-orange hover:bg-black cursor-pointer hidden z-[9999] transition-opacity duration-300">
+        ↑
+    </button>
+
     <script src="./assets/js/app.js"></script>
 </body>
 

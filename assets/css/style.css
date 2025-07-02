@@ -18,6 +18,26 @@ body {
     transition: border-radius 0.4s ease-in-out;
 }
 
-.cap-trim{
+.cap-trim {
     leading-trim: cap;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #555;
 }

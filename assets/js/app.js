@@ -45,5 +45,3 @@ items.forEach(item => {
         }
     });
 });
-
-

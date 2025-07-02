@@ -10,7 +10,7 @@ const toggleNavbar = () => {
     toggleBar1.classList.toggle('rotate-[35deg]');
     toggleBar2.classList.toggle('opacity-0');
     toggleBar3.classList.toggle('-rotate-[35deg]');
-    document.querySelector('html').classList.toggle('overflow-y-hidden');
+    document.querySelector('html').classList.toggle('max-md:overflow-y-hidden');
 };
 
 navlinks.forEach(item => {

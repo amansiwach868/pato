@@ -17,6 +17,7 @@ navlinks.forEach(item => {
     item.addEventListener('click', toggleNavbar);
 });
 
+// Accordion //
 const items = document.querySelectorAll('.accordion-item');
 items.forEach(item => {
     const header = item.querySelector('.accordion-header');
@@ -43,5 +44,23 @@ items.forEach(item => {
             content.style.maxHeight = content.scrollHeight + "px";
             arrow.classList.add('rotate-90');
         }
+    });
+});
+
+// Back-To-Top //
+const btn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+});
+
+btn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 });

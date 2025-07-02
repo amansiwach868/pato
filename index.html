@@ -361,17 +361,18 @@
                 </div>
             </div>
             <button type="button" class="mb-[100px] sm:mb-[250px] text-base sm:text-lg md:text-xl lg:text-2xl text-white font-tomorrow uppercase leading-[28px] sm:leading-[30px] lg:leading-[32px] font-semibold border-2 rounded-full 
-             px-6 sm:px-10 md:px-[50px] lg:px-[61.7px] py-2 sm:py-[4.5px] border-white mt-5 
-             hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
+     px-6 sm:px-10 md:px-[50px] lg:px-[61.7px] py-2 sm:py-[4.5px] border-white mt-5 
+     hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
                 Wszystkie Odcinki
             </button>
         </div>
-        <img class="w-full absolute bottom-0" src="./assets/images/png/cloud-1.png" alt="bottom-cloud-img">
+        <img class="w-full absolute bottom-0 pointer-events-none" src="./assets/images/png/cloud-1.png"
+            alt="bottom-cloud-img">
     </section>
     <!-- SUBSKRYBUJ PODCAST section -->
     <section
         class="pt-[40px] pb-[46px] sm:pt-[80px] sm:pb-[96px] md:pt-[102px] md:pb-[148px] max-w-[1920px] mx-auto relative">
-        <img class="absolute bottom-5 min-[992px]:top-0 right-5 min-[992px]:right-40 w-[48px] sm:w-[105.56px] h-[48px] sm:h-[105.56px] "
+        <img class="absolute pointer-events-none bottom-5 min-[992px]:top-0 right-5 min-[992px]:right-40 w-[48px] sm:w-[105.56px] h-[48px] sm:h-[105.56px] "
             src="./assets/images/svg/cross.svg" alt="cross">
         <div class="max-w-[1150px] px-[30px] mx-auto">
             <h2
@@ -767,6 +768,11 @@
         <img class="max-sm:max-w-[74px] w-full max-w-[146px] max-h-[146px] pointer-events-none max-sm:max-h-[74px] absolute top-[140px] sm:top-[161px] max-sm:-right-5 -right-[38px]"
             src="./assets/images/svg/footer-line-circle.svg" alt="footer-line-circle">
     </footer>
+    <!-- back-to-top -->
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 px-4 py-2 text-white text-[16px] rounded-md !bg-orange hover:bg-black cursor-pointer hidden z-[9999] transition-opacity duration-300">
+        ↑
+    </button>
     <script src="./assets/js/app.js"></script>
 </body>
 

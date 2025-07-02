@@ -97,9 +97,10 @@
     <!--------------------- podcast section --------------------->
     <section id="podcast"
         class="lg:min-h-[1007px] md:min-h-[700px] sm:min-h-[550px] min-h-[415px] relative max-w-[1920px] w-full mx-auto lg:pt-[58px] md:pt-[50px] pt-[37px]">
-        <img class="absolute top-[88px] max-lg:hidden right-[120px]" src="./assets/images/svg/rounded-cross.svg"
-            alt="rounded-cross">
-        <img class="absolute top-[212px] max-md:hidden right-[-56px]" src="./assets/images/svg/cross.svg" alt="cross">
+        <img class="absolute top-[88px] max-lg:hidden right-[120px] pointer-events-none"
+            src="./assets/images/svg/rounded-cross.svg" alt="rounded-cross">
+        <img class="absolute top-[212px] max-md:hidden right-[-56px] pointer-events-none"
+            src="./assets/images/svg/cross.svg" alt="cross">
         <div class="max-w-[1240px] mx-auto px-[30px] w-full">
             <div class="max-w-[592px] mx-auto w-full">
                 <p
@@ -116,14 +117,14 @@
             src="./assets/images/png/two-man-with-podcast.png" alt="podcast">
     </section>
     <!-------------------NAS SECTION--------------------->
-    <section id="oNas" class="bg-orange relative overflow-hidden max-w-[1920px] mx-auto">
-        <div class="max-w-[1240px] mx-auto lg:pt-[105px] md:pt-[140px] pt-[70px] xl:pb-[250px] lg:pb-[120px]">
+    <section class="bg-orange relative overflow-hidden max-w-[1920px] mx-auto">
+        <div class="max-w-[1240px] mx-auto lg:pt-[165px] md:pt-[140px] pt-[70px] xl:pb-[258px] lg:pb-[120px]">
             <div class="lg:flex px-[30px]">
                 <div class="lg:max-w-md">
                     <h2 class="font-semibold text-[64px] text-light-black font-tomorrow leading-[100%] uppercase">
                         O nas
                     </h2>
-                    <div class="absolute top-[7%] left-[31%] hidden lg:block">
+                    <div class="absolute top-[9%] left-[33%] hidden lg:block">
                         <img src="./assets/images/svg/arrow.svg" alt="decorative arrow">
                     </div>
                     <div class="xl:pt-16 pt-8">
@@ -131,7 +132,7 @@
                             class="font-semibold md:text-[40px] text-4xl text-light-black font-tomorrow leading-[48px] uppercase text-white">
                             Łukasz Kałużny
                         </h2>
-                        <p class="font-inter font-medium md:text-xl text-lg leading-[100%] pt-[35px] lg:max-w-[422px]">
+                        <p class="font-inter font-medium md:text-xl text-lg leading-[100%] pt-[35px] lg:max-w-[423px]">
                             Inżynier, architekt i współzałożyciel Protopia. Specjalista od Microsoft Azure z tytułem MVP
                             od
                             2012 roku. Uwielbia wyzwania i najnowsze technologie. Łukasz pomaga firmom przekształcać
@@ -178,7 +179,7 @@
                 </div>
                 <div>
                     <img src="./assets/images/svg/circle.svg" alt="decorative circle"
-                        class="absolute lg:top-[3%] lg:right-[-10.5%] xl:size-[303px] lg:size-[230px] md:size-[100px] size-12 top-0 ">
+                        class="absolute lg:top-[6%] lg:right-[-10.5%] xl:size-[303px] lg:size-[230px] md:size-[100px] size-12 top-0 ">
                     <img src="./assets/images/png/two-people.png" alt="Two people"
                         class="xl:max-w-[1000px] lg:max-w-[700px] md:max-w-[600px] lg:absolute xl:top-[8%] top-[11%] right-[0%] object-cover rounded-lg z-0" />
                 </div>
@@ -197,7 +198,7 @@
                     class="lg:pb-[93px] pb-[40px]  max-lg:size-28 max-md:size-20">
             </div>
             <div id="accordion" class="flex flex-col md:gap-11 gap-6">
-                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-300 ease-in-out rounded-full"
+                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
                     style="border-radius: 50px;">
                     <button
                         class="accordion-header w-full flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
@@ -209,11 +210,11 @@
                         </span>
                     </button>
                     <div
-                        class="accordion-content max-h-0 overflow-hidden transition-all duration-300 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
                         <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
                     </div>
                 </div>
-                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-300 ease-in-out rounded-full"
+                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
                     style="border-radius: 50px;">
                     <button
                         class="accordion-header w-full uppercase flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
@@ -225,11 +226,11 @@
                         </span>
                     </button>
                     <div
-                        class="accordion-content max-h-0 overflow-hidden transition-all duration-300 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
                         <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
                     </div>
                 </div>
-                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-300 ease-in-out rounded-full"
+                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
                     style="border-radius: 50px;">
                     <button
                         class="accordion-header uppercase w-full flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
@@ -241,11 +242,11 @@
                         </span>
                     </button>
                     <div
-                        class="accordion-content max-h-0 overflow-hidden transition-all duration-300 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
                         <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
                     </div>
                 </div>
-                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-300 ease-in-out rounded-full"
+                <div class="accordion-item bg-white text-black overflow-hidden transition-all duration-500 ease-in-out rounded-full"
                     style="border-radius: 50px;">
                     <button
                         class="accordion-header uppercase w-full flex justify-between items-center md:pl-[45px] pl-4 pr-2 py-3 md:text-[40px] text-xl leading-[100%] font-semibold">
@@ -257,7 +258,7 @@
                         </span>
                     </button>
                     <div
-                        class="accordion-content max-h-0 overflow-hidden transition-all duration-300 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
+                        class="accordion-content max-h-0 overflow-hidden transition-all duration-500 pl-[45px] pr-6 text-base text-black rounded-b-2xl">
                         <p class="pb-4">Details about SZKOLENIA OTWARTE</p>
                     </div>
                 </div>
@@ -289,7 +290,7 @@
             </div>
             <img src="./assets/images/png/cloud-1.png" alt="cloud-1" class="absolute bottom-0 right-0">
     </section>
-    <!-- NEWSLETTERA -->
+    <!--------------------- NEWSLETTERA --------------------->
     <section id="newslettra"
         class="px-[30px] relative min-h-[439px] sm:max-h-[758px] sm:min-h-[758px] max-w-[1920px] mx-auto">
         <img class="absolute top-[250px] left-18 pointer-events-none xl:left-20 max-lg:hidden"

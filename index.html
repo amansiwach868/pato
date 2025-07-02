@@ -596,17 +596,19 @@
                 class="font-inter mx-auto font-medium max-sm:text-xs leading-[120%] text-center text-light-black max-w-[584px] pt-[15px] sm:pt-8">
                 Wypełnij poniższy formularz, aby być na bieżąco ze wszystkimi odcinkami Patoarchitektów i uzyskać dostęp
                 do dodatkowych materiałów.</p>
-            <div class="max-w-[500px] mx-auto w-full mt-8 sm:mt-[67px]">
-                <input
-                    class="max-w-[435px] flex justify-center mx-auto w-full text-center px-8 font-medium text-2xl leading-[32px] text-gray placeholder:text-gray outline-0"
-                    type="email" placeholder="Adres e-mail">
-                <div class="border mt-1.5 border-orange"></div>
-            </div>
-            <div class="flex justify-center mt-8 sm:mt-[93px]">
-                <button
-                    class="bg-orange hover:text-orange hover:bg-light-black transition-all duration-300 ease-linear active:scale-95 text-light-black p-[10.5px] w-full max-w-[353px] rounded-[70px] font-bold sm:text-2xl leading-[100%] uppercase">Zapisz
-                    się</button>
-            </div>
+            <form onsubmit="">
+                <div class="max-w-[500px] mx-auto w-full mt-8 sm:mt-[67px]">
+                    <input type="email" placeholder="Adres e-mail"
+                        class="max-w-[435px] flex justify-center mx-auto w-full text-center px-8 font-medium text-xl sm:text-2xl leading-[32px] text-gray placeholder:text-gray outline-0">
+                    <div class="border mt-1.5 border-orange"></div>
+                </div>
+                <div class="flex justify-center mt-8 sm:mt-[93px]">
+                    <button type="submit"
+                        class="bg-orange max-sm:text-sm hover:text-orange hover:bg-light-black transition-all duration-300 ease-linear active:scale-95 text-light-black p-[10.5px] w-full max-w-[353px] rounded-[70px] font-bold sm:text-2xl leading-[100%] uppercase">
+                        Zapisz się
+                    </button>
+                </div>
+            </form>
         </div>
         <img class="w-full absolute bottom-0 left-0 z-20 pointer-events-none"
             src="./assets/images/png/footer-black-cloud.png" alt="cloud-img">

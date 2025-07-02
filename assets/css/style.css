@@ -19,10 +19,6 @@ body {
     transition: border-radius 0.4s ease-in-out;
 }
 
-.cap-trim {
-    leading-trim: cap;
-}
-
 #backToTop {
     position: fixed;
     bottom: 30px;

@@ -51,10 +51,10 @@ items.forEach(item => {
 const btn = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        btn.style.display = 'block';
+    if (window.scrollY > 400) {
+        btn.classList.remove('hidden');
     } else {
-        btn.style.display = 'none';
+        btn.classList.add('hidden');
     }
 });
 

@@ -3,7 +3,7 @@ const toggleBar1 = document.getElementById('toggleBar1')
 const toggleBar2 = document.getElementById('toggleBar2')
 const toggleBar3 = document.getElementById('toggleBar3')
 
-const navlinks = document.querySelectorAll('#nav-link')
+const navlinks = document.querySelectorAll('.nav-link')
 
 const toggleNavbar = () => {
     navMenu.classList.toggle('right-0');

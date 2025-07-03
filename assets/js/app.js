@@ -18,7 +18,6 @@ const toggleNavbar = () => {
     toggleBar3.classList.toggle('-translate-y-[7px]');
     toggleBar3.classList.toggle('rounded-3xl');
 
-    // Use a custom class instead of responsive one
     document.querySelector('html').classList.toggle('overflow-hidden');
 };
 
@@ -60,13 +59,22 @@ items.forEach(item => {
 // Back-To-Top //
 const btn = document.getElementById('backToTop');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
+const toggleButtonOnScroll = () => {
+    const shouldShowBtn =
+        (window.innerWidth >= 1920 && window.scrollY > 800) ||
+        (window.innerWidth < 1920 && window.scrollY > 400);
+
+    if (shouldShowBtn) {
         btn.classList.remove('hidden');
     } else {
         btn.classList.add('hidden');
     }
-});
+};
+
+window.addEventListener('scroll', toggleButtonOnScroll);
+
+toggleButtonOnScroll();
+
 
 btn.addEventListener('click', () => {
     window.scrollTo({

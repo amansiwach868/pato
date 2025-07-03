@@ -7,11 +7,21 @@ const navlinks = document.querySelectorAll('.nav-link')
 
 const toggleNavbar = () => {
     navMenu.classList.toggle('right-0');
-    toggleBar1.classList.toggle('rotate-[35deg]');
+
+    toggleBar1.classList.toggle('rotate-[45deg]');
+    toggleBar1.classList.toggle('translate-y-[7px]');
+    toggleBar1.classList.toggle('rounded-3xl');
+
     toggleBar2.classList.toggle('opacity-0');
-    toggleBar3.classList.toggle('-rotate-[35deg]');
-    document.querySelector('html').classList.toggle('max-md:overflow-y-hidden');
+
+    toggleBar3.classList.toggle('-rotate-[45deg]');
+    toggleBar3.classList.toggle('-translate-y-[7px]');
+    toggleBar3.classList.toggle('rounded-3xl');
+
+    // Use a custom class instead of responsive one
+    document.querySelector('html').classList.toggle('overflow-hidden');
 };
+
 
 navlinks.forEach(item => {
     item.addEventListener('click', toggleNavbar);

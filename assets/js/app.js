@@ -1,30 +1,46 @@
-const navMenu = document.getElementById('navMenu')
-const toggleBar1 = document.getElementById('toggleBar1')
-const toggleBar2 = document.getElementById('toggleBar2')
-const toggleBar3 = document.getElementById('toggleBar3')
+const navMenu = document.getElementById('navMenu');
+const toggleBar1 = document.getElementById('toggleBar1');
+const toggleBar2 = document.getElementById('toggleBar2');
+const toggleBar3 = document.getElementById('toggleBar3');
+const navlinks = document.querySelectorAll('.nav-link');
 
-const navlinks = document.querySelectorAll('.nav-link')
+const openNavbar = () => {
+    navMenu.classList.add('right-0');
 
-const toggleNavbar = () => {
-    navMenu.classList.toggle('right-0');
+    toggleBar1.classList.add('rotate-[45deg]', 'translate-y-[7px]', 'rounded-3xl');
+    toggleBar2.classList.add('opacity-0');
+    toggleBar3.classList.add('-rotate-[45deg]', '-translate-y-[7px]', 'rounded-3xl');
 
-    toggleBar1.classList.toggle('rotate-[45deg]');
-    toggleBar1.classList.toggle('translate-y-[7px]');
-    toggleBar1.classList.toggle('rounded-3xl');
-
-    toggleBar2.classList.toggle('opacity-0');
-
-    toggleBar3.classList.toggle('-rotate-[45deg]');
-    toggleBar3.classList.toggle('-translate-y-[7px]');
-    toggleBar3.classList.toggle('rounded-3xl');
-
-    document.querySelector('html').classList.toggle('overflow-hidden');
+    document.querySelector('html').classList.add('overflow-hidden');
 };
 
+const closeNavbar = () => {
+    navMenu.classList.remove('right-0');
+
+    toggleBar1.classList.remove('rotate-[45deg]', 'translate-y-[7px]', 'rounded-3xl');
+    toggleBar2.classList.remove('opacity-0');
+    toggleBar3.classList.remove('-rotate-[45deg]', '-translate-y-[7px]', 'rounded-3xl');
+
+    document.querySelector('html').classList.remove('overflow-hidden');
+};
+
+const toggleNavbar = () => {
+    const isOpen = navMenu.classList.contains('right-0');
+    if (isOpen) {
+        closeNavbar();
+    } else {
+        openNavbar();
+    }
+};
+
+document.querySelector('.group').addEventListener('click', toggleNavbar);
 
 navlinks.forEach(item => {
-    item.addEventListener('click', toggleNavbar);
+    item.addEventListener('click', () => {
+        closeNavbar();
+    });
 });
+
 
 // Accordion //
 const items = document.querySelectorAll('.accordion-item');
